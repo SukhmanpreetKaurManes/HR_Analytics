@@ -6,9 +6,12 @@ from catboost import CatBoostClassifier
 model = CatBoostClassifier()
 model.load_model("catboost_hr_model.cbm")
 
-st.set_page_config(page_title="Employee Promotion Predictor", layout="centered")
-st.title("🚀 Employee Promotion Prediction System")
-st.write("Enter employee details below to predict whether the employee will be promoted.")
+st.set_page_config(page_title="HR Analytics – Employee Promotion Prediction System", layout="centered")
+
+st.title("📊 HR Analytics – Employee Promotion Prediction System")
+
+st.write("🎉 Welcome to the Employee Promotion Prediction System! 👋")
+st.write("Enter employee details below to predict whether the employee is likely to be promoted.🚀")
 
 # ---------------- INPUTS ---------------- #
 age = st.number_input("Age", min_value=18, max_value=60, value=30)
